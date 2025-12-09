@@ -18,7 +18,7 @@ find . -name ".gitignore" -delete
 
 %install
 mkdir -p %{buildroot}/usr/lib
-cp -R firmware/* %{buildroot}/usr/lib/
+cp -R firmware %{buildroot}/usr/lib/
 
 %files
 /usr/lib/firmware
