@@ -11,13 +11,13 @@ BuildArch:      noarch
 This package contains the firmware files for Xiaomi Nabu
 
 %prep
-%autosetup -p1
+%autosetup
 find . -name ".gitignore" -delete
 
 %build
 
 %install
-mkdir -p %{buildroot}%{_datadir}/alsa
+mkdir -p %{buildroot}/usr/lib
 cp -R firmware/* %{buildroot}/usr/lib/
 
 %files
